@@ -15,7 +15,12 @@ app.get('/', function(req, res){
     // res.send('Aloha World');
     res.render('index', { 
         list: ['first val', '2nd val', '3rd val'],
-        nav: ['Services', 'Portfolio', 'About', 'Team', 'Contact']
+        nav: [{ Link: 'Services', Text : 'Services'},
+              {Link: 'Portfolio', Text : 'Portfolio'},
+              {Link: 'About', Text : 'About'},
+              {Link: 'Team', Text : 'Team'},
+              {Link: 'Contact', Text : 'Contact'}
+        ]
     });
         
 });
