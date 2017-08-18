@@ -53,21 +53,29 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          
+          <% for (i=0; i<nav.length; i++) {%>
+            <li>
+              <a class="nav-link" href="#<%=nav[i] %>"><%=nav[i] %></a>
+            </li>
+             
+          <% } %>
+          
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#services">Services</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#portfolio">Portfolio</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#about">About</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#team">Team</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#contact">Contact</a>-->
+          <!--</li>-->
         </ul>
       </div>
     </nav>
@@ -84,7 +92,22 @@
     </header>
 
     <!-- Services -->
-    <section id="services">
+    
+    <ul>
+      <% for(var i=0; i<list.length; i++){%>
+        <li>
+          <h4> <%=list[i] %> </h4>
+        </li>
+        <%}%>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    <section id="Services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -122,7 +145,7 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="Portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -220,7 +243,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="About">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -301,7 +324,7 @@
     </section>
 
     <!-- Team -->
-    <section class="bg-light" id="team">
+    <section class="bg-light" id="Team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -420,7 +443,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="Contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
