@@ -76,7 +76,7 @@ dbRouter.route('/AddEventData')
     .get(function(req, res) {
         // get reference for MongoDb client
         // open a connection to Monogdb 
-        var url = 'mongodb://localhost:27017/eventsApp';
+       var url = 'mongodb://localhost:27017/eventsApp';
         mongodb.connect(url, function(err, db){
             var collection = db.collection('events');
             collection.insertMany(eventsData, function(err, results){
